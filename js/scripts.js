@@ -36,6 +36,7 @@ function getTodos(currentDate = "", status = "all") {
     }
     return todos;
   }
+
   return [];
 }
 function saveTodos(todos) {

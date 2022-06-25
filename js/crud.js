@@ -1,8 +1,13 @@
 function generateTodos(todos) {
-  document.querySelector(".no-task-text").classList.add("hide");
-
   let todoList = document.querySelector(".task-list");
   todoList.innerHTML = "";
+  if (!todos.length) {
+    document.querySelector(".no-task-text").classList.remove("hide");
+
+    return;
+  }
+  document.querySelector(".no-task-text").classList.add("hide");
+
   todos.forEach((todo) => {
     let todoItem = document.createElement("li");
     todoItem.classList.add("task-item");
