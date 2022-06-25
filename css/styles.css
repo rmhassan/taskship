@@ -88,6 +88,8 @@ body {
     align-items: center;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
+    
 
 }
 .filter-by-status-input {
