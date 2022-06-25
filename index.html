@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskship</title>
+    <script
+      src="https://kit.fontawesome.com/64d3851380.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;600;800&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="brand">
+          <i class="fa-solid fa-check-double"></i>
+          <p class="brand-name">Taskship</p>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container">
+        <div class="taskship-app">
+          <div class="add-task">
+            <input type="text" class="add-task-input" />
+            <a href="#" class="add-task-button">Add</a>
+          </div>
+          <div class="filters">
+            <!-- <div class="filter-previous-day">
+              <a href="#"> Previous Day </a>
+            </div> -->
+            <div class="fitler-by-status">
+              <select name="filterByStatus" class="filter-by-status-input">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="remaining">Remaining</option>
+                <option value="favourite">Favourite</option>
+              </select>
+            </div>
+            <div class="filter-by-date">
+              <input
+                type="date"
+                class="filter-by-date-input"
+                title="Pick a date"
+              />
+            </div>
+            <div class="">
+              <p class="task-update-text">Click on a task to update it.</p>
+            </div>
+          </div>
+          <div class="tasks">
+            <p class="no-task-text">No task to show here</p>
+            <ul class="task-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Coded with <i class="fa-solid fa-heart"></i> by
+        <a href="https://rmhassan.github.io/profile/">Mehmood</a>
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
