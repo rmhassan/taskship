@@ -89,7 +89,7 @@ body {
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 
 }
 .filter-by-status-input {
@@ -207,7 +207,12 @@ padding: 0 10px;
     html {
         font-size: 8px;
     }
-  
+  .task-list {
+      height: 300px;
+  }
+  .taskship-app {
+    width: 100%;
+  }
         .task-input {
             font-size: 1.8rem;
         }
